@@ -12,6 +12,10 @@
     background-color: var(--secondary-bg);
 }
 
+footer {
+    margin-bottom: 10px;
+}
+
 #word-list {
     width: 100%;
     border-collapse: collapse;

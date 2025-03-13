@@ -23,6 +23,9 @@
     50% { transform: translateY(-2px); }
 }
 
+body {
+    padding-bottom: 55vh; /* Ajuste conforme a altura do footer */
+}
 
 .bounce-button {
     animation: bounce 0.6s infinite alternate ease-in-out;
@@ -77,7 +80,7 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 header > div {
@@ -147,11 +150,6 @@ body {
 #keyboard > div {
     display: flex;
     flex-direction: row;
-}
-
-footer {
-    position: relative;
-    margin-bottom: 20px;
 }
 
 #l {
