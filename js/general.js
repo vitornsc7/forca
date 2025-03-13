@@ -1,6 +1,6 @@
 // Função para "voltar" (exemplo simples)
 function menu() {
-    window.location.href = "menu.html";
+    window.location.href = "index.html";
 }
 
 window.onload = function () {

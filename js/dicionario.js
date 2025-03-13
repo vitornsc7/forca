@@ -88,5 +88,4 @@ window.addEventListener('keydown', function(event) {
     }
 });
 
-
 window.onload = carregarPalavras;
