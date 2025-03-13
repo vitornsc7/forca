@@ -32,11 +32,12 @@ img {
 body {
     background-color: var(--primary-bg);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
     position: relative;
+    margin: 0 2%;
 }
 
 button {

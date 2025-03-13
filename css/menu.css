@@ -1,6 +1,7 @@
 #main-content {
     text-align: center;
     width: 400px;
+    margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 .buttons {
@@ -27,8 +28,21 @@ footer {
     margin-bottom: 10px;
 }
 
+body {
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    overflow: hidden; /* Impede o scroll */
+}
+
+/* Media Query para telas pequenas */
 @media only screen and (max-width: 700px) {
     #main-content {
-        width: 80%;
+        width: 80%; /* Ajusta a largura para dispositivos menores */
     }
 }

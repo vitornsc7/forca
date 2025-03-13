@@ -16,6 +16,18 @@ footer {
     margin-bottom: 10px;
 }
 
+body {
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    overflow: hidden; /* Impede o scroll */
+}
+
 #word-list {
     width: 100%;
     border-collapse: collapse;
