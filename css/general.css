@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-bg: #1e1e1e;
+    --secondary-bg: #4a4a4a;
+    --tertiary-bg: #303030;
+    --correct-letter: #61297d;
+    --primary-color: white;
+    --alert-color: #e44343;
+    --button-bg: #8c46af;
+    --button-hover: #9d4fc4;
+    --button-active: #b45be1;
+    --border-color: #9d4fc4;
+    --button-radius: 10px;
+    --button-width: 100px;
+    --button-padding: 10px 0;
+    --font-main: "Nunito", Arial, sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+* {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+button {
+    background-color: var(--button-bg);
+    padding: var(--button-padding);
+    width: var(--button-width);
+    border-radius: var(--button-radius);
+    border: none;
+    font-size: 18px;
+    margin: 10px 5px;
+    transition: all 0.2s linear, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--button-active);
+    transform: scale(0.95);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,168 @@
+#table-container {
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: var(--button-radius);
+    padding: 0 6px;
+    margin-top: 5px;
+    display: flex;
+    align-items: flex-start;
+    border: solid 2px var(--border-color);
+    background-color: var(--secondary-bg);
+}
+
+#word-list {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#word-list-body tr {
+    height: 30px;
+}
+
+#table-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#table-container::-webkit-scrollbar-track {
+    border-radius: var(--button-radius);
+}
+
+#table-container::-webkit-scrollbar-thumb {
+    background: #8c46af; 
+    border-radius: 10px;
+}
+
+#table-container::-webkit-scrollbar-thumb:hover {
+    background: #9d4fc4; 
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    user-select: none;
+}
+
+#inputs {
+    max-height: 50px;
+}
+
+input {
+    width: 200px;
+    height: 100%;
+    background-color: var(--secondary-bg);
+    padding: 9px;
+    font-size: 18px;
+    border: solid 2px var(--border-color);
+    border-radius: var(--button-radius);
+    outline: none;
+    user-select: none;
+}
+
+button {
+    height: 100%;
+}
+
+#alerta {
+    color: var(--alert-color);
+    text-align: left;
+    width: 80%;
+    padding: 4px 0;
+    height: 30px;
+    user-select: none;
+}
+
+table {
+    text-align: left;
+    border-radius: var(--button-radius);
+    
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+
+.delete-icon {
+    text-align: center;
+    width: 20px;
+    user-select: none;
+}
+
+.delete-icon:hover {
+    cursor: pointer;
+}
+
+#main-content {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 80%;
+}
+
+@media only screen and (max-width: 850px) {
+    #main-content {
+        flex-direction: column;
+    }
+
+    #inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    #adicionar {
+        margin-top: 0;
+    }
+
+    input {
+        width: 75%;
+    }
+
+    button {
+        height: 46px;
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    #table-container {
+        width: 99%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    header {
+        width: 60%;
+    }
+
+    #main-content {
+        width: 60%;
+    }
+
+    #alerta {
+        width: 60%;
+    }
+
+    
+}
+
+@media only screen and (min-width: 2000px) {
+    header {
+        width: 40%;
+    }
+
+    #main-content {
+        width: 40%;
+    }
+
+    #alerta {
+        width: 40%;
+    }
+}

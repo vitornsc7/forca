@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forca</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/dicionario.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="../js/general.js" defer></script>
+    <script src="../js/dicionario.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dicionário</h1>
+        <button onclick="menu()">Voltar</button>
+    </header>
+    <p id="alerta">ㅤ</p>
+    <div id="main-content">
+        <div id="inputs">
+            <input id="word-input" onkeydown="bloquearEntrada(event)" type="text" placeholder="Digite uma palavra..." autocomplete="off">
+            <button onclick="adicionarPalavra()" id="adicionar" >Adicionar</button>
+        </div>
+        
+        <div id="table-container">
+            <table id="word-list">
+                <tbody id="word-list-body">
+                    <tr><td>Banana</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Vitor do Nascimento - 2025.</p>
+    </footer>
+</body>
+</html>

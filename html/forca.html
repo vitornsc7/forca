@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forca</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/forca.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="../js/general.js" defer></script>
+    <script src="../js/forca.js" defer></script>
+
+</head>
+<body>
+    <div id="game-over-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Game Over</h2>
+            <p>Você perdeu! Tente novamente ou volte ao menu.</p>
+            <div id="div-palavra-final">
+                <img src="../images/forca.png" alt="forca">
+                <p id="palavra-final">sd</p>
+            </div>
+            
+            <div class="buttons-container">
+                <button onclick="menu()">
+                    <span class="material-symbols-outlined">home</span> Voltar ao Menu
+                </button>
+                <button class="bounce-button" onclick="reiniciar()">
+                    <span class="material-symbols-outlined">replay</span> Reiniciar Jogo
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="victory-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2 class="victory-title">Parabéns! Você venceu! 🎉</h2>
+            <div id="div-palavra-final">
+                <img src="../images/forca.png" alt="forca">
+                <p id="palavra-vitoria">sd</p>
+            </div>
+            <div class="buttons-container">
+                <button onclick="menu()">
+                    <span class="material-symbols-outlined">home</span> Voltar ao Menu
+                </button>
+                <button class="bounce-button" onclick="reiniciar()">
+                    <span class="material-symbols-outlined">replay</span> Reiniciar Jogo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div>
+            <h1>Forca</h1>
+            <div>
+                <button onclick="menu()">Voltar</button>
+                <button id="reiniciar" onclick="reniciar()"><span class="material-symbols-outlined">replay</span></button>
+            </div>
+        </div>
+        <div id="hearts">
+        </div>
+    </header>
+    
+    <div id="word">
+    </div>
+
+    <footer>
+        <div id="keyboard">
+        </div>
+
+        <p>Desenvolvido por Vitor do Nascimento - 2025.</p>
+    </footer>
+</body>
+</html>

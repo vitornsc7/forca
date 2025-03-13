@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forca</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <div id="main-content">
+        <div class="logo">
+            <img src="../images/forca.png" alt="">
+            <h1>Forca</h1>
+            
+        </div>
+        <p>Um jogo simples baseado no jogo clássico "Forca". Você pode gerenciar as palavras do jogo no dicionário.</p>
+        <div class="buttons">
+            <button id="jogar">Jogar</button>
+            <button id="dicionario">Dicionário</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Vitor do Nascimento - 2025.</p>
+    </footer>
+
+    <script>
+        function inicializarDicionario() {
+            let palavras = JSON.parse(localStorage.getItem("palavras")) || [];
+
+            if (palavras.length === 0) {
+                const palavras = [
+                    "felicidade", "abacate", "girassol", "elefante", "tartaruga", 
+                    "computador", "guitarra", "chocolate", "bicicleta", "maracuja", 
+                    "esmeralda", "astronauta", "foguete", "cachoeira", "oceano", 
+                    "borboleta", "relâmpago", "sombra", "tempestade", "sorriso", 
+                    "montanha", "árvore", "céu", "pássaro", "rápido", "público", 
+                    "saída", "coração", "júnior", "história", "fácil"
+                ];
+                
+                palavras.forEach(palavra => palavras.push(palavra));
+                localStorage.setItem("palavras", JSON.stringify(palavras));
+            }
+        }
+
+        inicializarDicionario();
+
+        document.getElementById("dicionario").onclick = function() {
+            inicializarDicionario();
+            window.location.href = "dicionario.html";
+        };
+
+        document.getElementById("jogar").onclick = function() {
+            inicializarDicionario();
+            window.location.href = "forca.html";
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("main-content").style.opacity = "1";
+        document.getElementsByTagName("footer").style.opacity = "1";
+    });
+    </script>
+</body>
+</html>
