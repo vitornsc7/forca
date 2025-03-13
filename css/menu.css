@@ -1,8 +1,10 @@
 #main-content {
     text-align: center;
     width: 400px;
-    margin: 0 auto; /* Centraliza o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    margin-top: -80px; /* Move o conteúdo para cima */
 }
+
 
 .buttons {
     display: flex;
