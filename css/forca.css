@@ -99,6 +99,7 @@ header > div {
 #heart {
     color: var(--alert-color);
     font-size: 30px !important;
+    margin-top: 15px;
 }
 
 header {
@@ -154,12 +155,29 @@ footer {
 }
 
 #l {
-    margin-right: 20px;
+    margin-right: 3%;
+}
+
+#a {
+    margin-left: 3%;
 }
 
 #m {
-    margin-right: 4%;
+    margin-right: 12%;
 }
+
+#z {
+    margin-left: 6%;
+}
+
+#p {
+    margin-right: 1%;
+}
+
+#q {
+    margin-left: 0.1%;
+}
+
 
 #keyboard {
     display: flex;
@@ -297,6 +315,16 @@ button > span {
 @media (max-width: 730px) {
     .char {
         font-size: clamp(1.4em, 3vw, 1.5em);
+    }
+    
+    header {
+        width: 95%;
+    }
+}
+
+@media (max-width: 700px) {
+    .char {
+        font-size: clamp(0.6em, 3vw, 1.5em);
     }
     
     header {
