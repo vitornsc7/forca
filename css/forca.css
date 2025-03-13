@@ -23,6 +23,11 @@
     50% { transform: translateY(-2px); }
 }
 
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
     padding-bottom: 55vh;
 }
@@ -103,7 +108,7 @@ header {
     width: 100%;
     max-width: 680px;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 header > div > div > button {
@@ -318,7 +323,7 @@ button > span {
 
 @media (min-width: 730px) {
     .char > p {
-        font-size: clamp(0.5em, 2.5vw, 1.3em);
+        font-size: clamp(0.5em, 2.5vw, 1.1em);
     }
     
     header {
@@ -339,6 +344,28 @@ button > span {
 @media (max-width: 400px) {
     #keyboard {
         margin-bottom: 50px;
+        flex-grow: 0;
+        width: 100%;
+        gap: 5px;
+    }
+
+    #keyboard div {
+        gap: 4px;
+    }
+
+    .char {
+        font-size: clamp(0.1em, 5vw, 0.3em);
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+@media (max-height: 480px) {
+    #keyboard {
+        margin-bottom: 20px;
         flex-grow: 0;
         width: 100%;
         gap: 5px;
