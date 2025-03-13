@@ -1,10 +1,8 @@
 #main-content {
     text-align: center;
     width: 400px;
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-    margin-top: -80px; /* Move o conteúdo para cima */
+    margin: 200px 0;
 }
-
 
 .buttons {
     display: flex;
@@ -33,18 +31,17 @@ footer {
 body {
     background-color: var(--primary-bg);
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
     min-height: 100vh;
     position: relative;
     margin: 0;
-    overflow: hidden; /* Impede o scroll */
+    overflow: hidden;
 }
 
-/* Media Query para telas pequenas */
 @media only screen and (max-width: 700px) {
     #main-content {
-        width: 80%; /* Ajusta a largura para dispositivos menores */
+        width: 80%;
     }
 }

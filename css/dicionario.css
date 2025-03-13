@@ -19,13 +19,13 @@ footer {
 body {
     background-color: var(--primary-bg);
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-height: 100vh;
     position: relative;
     margin: 0;
-    overflow: hidden; /* Impede o scroll */
+    overflow: hidden;
 }
 
 #word-list {
